@@ -1,5 +1,6 @@
 import { useCallback, useState } from "react";
 import Input from "@/components/Input"
+import axios from 'axios'
 
 const Auth = () =>{
   const [email, setEmail] = useState('')
@@ -10,6 +11,10 @@ const Auth = () =>{
 
   const toggleMode = useCallback(()=>{
     setMode((currentMode)=> currentMode === 'login' ? 'register' : 'login')
+  },[])
+  
+  const register = useCallback(async () => {
+
   },[])
 
   return(
