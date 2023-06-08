@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
       <h1>Netflix Clone</h1>
-      <p className="text-white">Logged in as : {user?.email}</p>
+      <p className="text-white">Logged in as : {user?.name}</p>
       <button className="h-10 w-full bg-white"
         onClick={() => signOut()}
       >Logout</button>
