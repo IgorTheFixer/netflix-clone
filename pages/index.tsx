@@ -1,8 +1,7 @@
 import React from 'react';
 import { NextPageContext } from 'next';
-import { getSession, signOut } from 'next-auth/react';
+import { getSession } from 'next-auth/react';
 
-import useCurrentUser from '@/hooks/useCurrentUser';
 import useMoviesList from '@/hooks/useMovieList';
 import useFavorites from '@/hooks/useFavorites';
 import Navbar from '@/components/Navbar';
