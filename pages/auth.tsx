@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { ChangeEvent, useCallback, useState } from "react";
 import { getSession } from "next-auth/react";
 import { NextPageContext } from 'next';
 import Input from "@/components/Input"
@@ -82,21 +82,21 @@ const Auth = () =>{
               {mode === 'register' && (
                 <Input
                   label="Username"
-                  onChange={(e:any)=>{setName(e.target.value)}}
+                  onChange={(e:ChangeEvent<HTMLInputElement>)=>{setName(e.target.value)}}
                   id="name"
                   value={name}
                 />
               )}
               <Input
                 label="Email"
-                onChange={(e:any)=>{setEmail(e.target.value)}}
+                onChange={(e:ChangeEvent<HTMLInputElement>)=>{setEmail(e.target.value)}}
                 id="email"
                 type="email"
                 value={email}
               />
               <Input
                 label="Password"
-                onChange={(e:any)=>{setPassword(e.target.value)}}
+                onChange={(e:ChangeEvent<HTMLInputElement>)=>{setPassword(e.target.value)}}
                 id="password"
                 type="password"
                 value={password}
